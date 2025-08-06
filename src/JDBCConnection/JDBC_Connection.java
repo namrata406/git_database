@@ -16,6 +16,7 @@ public class JDBC_Connection {
 		Statement stat = con.createStatement();
 		ResultSet rs = stat.executeQuery("Select * From EmployeeInfo Where age = 34");
 		while(rs.next()) {
+			//add space in this code
 		System.out.print(rs.getString("name"));
 		System.out.print(rs.getString("id"));
 		System.out.println(rs.getString("dept"));
