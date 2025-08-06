@@ -20,6 +20,7 @@ public class JDBC_Connection {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.close();	
 		System.out.print(rs.getString("name")+" ");
 		System.out.print(rs.getString("id")+" ");
