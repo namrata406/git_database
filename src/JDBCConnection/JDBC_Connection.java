@@ -10,6 +10,7 @@ public class JDBC_Connection {
 
 	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
+		//add some comment only for check
 		String host = "localhost";
 		String port = "3306";
 		Connection con = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/Employeeportal","root","Singh123@");
